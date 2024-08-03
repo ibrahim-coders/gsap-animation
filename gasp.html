@@ -1,0 +1,147 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Apple Animation</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    #root {
+      height: 100vh;
+      width: 100vw;
+      display: flex;
+      justify-content: center;
+      background-color: #000000;
+      position: absolute;
+      top: 0;
+      left: 0;
+      align-items: center;
+      z-index: 99;
+    }
+
+    #apple-logo {
+      width: 50px;
+      height: 50px;
+      border-radius: 100%;
+      opacity: 0;
+      text-align: center;
+    }
+
+    .heding {
+      color: white;
+      font-size: 3rem;
+      top: 50%;
+      left: 50%;
+      opacity: 0;
+      position: absolute;
+      transform: translate(-50%, -50%);
+    }
+
+    header {
+      background-color: #000000;
+      display: flex;
+      justify-content: space-between;
+      max-width: 1000px;
+      align-items: center;
+      border-radius: 100px;
+      margin: 10px auto;
+      padding: 5px 10px;
+    }
+
+    h2 {
+      color: aliceblue;
+    }
+
+    nav a {
+      color: aliceblue;
+      text-decoration: none;
+      padding: 0 10px;
+      font-size: 16px;
+    }
+
+    .hero {
+      max-width: 600px;
+      text-align: center;
+      margin: 100px auto;
+      display: flex;
+      justify-content: center;
+      flex-direction: column;
+    }
+
+    .hero h1 {
+      font-size: 5rem;
+      font-weight: bold;
+      margin: 0;
+    }
+
+    .hero p {
+      opacity: 0.6;
+    }
+
+    .btn {
+      padding: 10px 20px;
+      background-color: blue;
+      border: none;
+      border-radius: 10px;
+      text-align: center;
+      width: 80px;
+      margin: 0 auto;
+      text-decoration: none;
+      color: white;
+    }
+
+    header img {
+      width: 40px;
+      height: 40px;
+      border-radius: 100px;
+    }
+  </style>
+</head>
+
+<body>
+  <!-- Entrance Section -->
+  <section id="root">
+    <img
+      src="https://substackcdn.com/image/fetch/w_1456,c_limit,f_webp,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F8ed3d547-94ff-48e1-9f20-8c14a7030a02_2000x2000.jpeg"
+      alt="apple-logo" id="apple-logo">
+    <h1 class="heding">Welcome</h1>
+  </section>
+  <!-- Entrance Section End -->
+
+  <header>
+    <img
+      src="https://substackcdn.com/image/fetch/w_1456,c_limit,f_webp,q_auto:good,fl_progressive:steep/https%3A%2F%2Fsubstack-post-media.s3.amazonaws.com%2Fpublic%2Fimages%2F8ed3d547-94ff-48e1-9f20-8c14a7030a02_2000x2000.jpeg"
+      alt="">
+    <nav>
+      <a href="#">Home</a>
+      <a href="#">Service</a>
+      <a href="#">Contact</a>
+      <a href="#">Portfolio</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero">
+      <h1>Hi Apple</h1>
+      <p>Apple Inc. is a multinational technology company headquartered in Cupertino, California. It was founded by
+        Steve Jobs, Steve Wozniak, and Ronald Wayne on April 1, 1976. Apple is known for its innovative products and
+        services.</p>
+      <a href="#" class="btn">Click me</a>
+    </section>
+  </main>
+
+  <!-- GSAP Link -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"
+    integrity="sha512-7eHRwcbYkK4d9g/6tD/mhkf++eoTHwpNM9woBxtPUBWm67zeAfFC+HrdoE2GanKeocly/VxeLvIqwvCdk7qScg=="
+    crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script src="index.js"></script>
+</body>
+
+</html>
